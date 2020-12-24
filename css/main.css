@@ -6,21 +6,25 @@ body {
 }
 
 #content {
+  position: relative
   text-align: center;
   max-height: 200px;
   max-width: 300px;
   margin: 0 auto;
-  z-index:10;
+   text-align: center;
+  z-index:100;
 }
 
 #rounded {
+  position: relative
   border-radius: 4%;
   height: 350px;
-  z-index:10;
+  z-index:101;
 }
 
 #name {
-  font-size: 32px;
+  text-align: center;
+  font-size: 33px;
   color: white;
 }
 
@@ -176,27 +180,7 @@ nav a:hover {
     to {background-position:-10000px 5000px;}
 }
 
-@keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
-}
-
-.stars, .twinkling, .clouds {
+.stars, .twinkling {
   position:absolute;
   top:0;
   left:0;
